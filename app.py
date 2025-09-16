@@ -1,8 +1,8 @@
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
 import os
+from langchain_community.chat_models import ChatGoogleGenerativeAI
 
-from langchain.chat_models import ChatGoogleGenerativeAI
 from langchain.prompts.chat import ChatPromptTemplate, MessagesPlaceholder
 from langchain.chains import LLMChain
 from langchain.memory import ConversationBufferMemory
